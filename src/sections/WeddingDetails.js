@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from '../resources/images/Boclair photo_cta.JPG';
+import image1 from '../resources/images/venue.jpg'; // Note: You may want to update this filename later!
 
 const styles = {
     sectionTitle: {
@@ -11,10 +11,8 @@ const styles = {
     infoText: {
         fontFamily: 'Playfair Display, serif',
         paddingTop: '10px',
-        // fontSize: 'clamp(20px, 2vw, 20px)'
     },
     noWrapText: {
-        // fontFamily: 'Playfair Display, serif',
         whiteSpace: 'nowrap',
         paddingRight: '10px'
     },
@@ -30,10 +28,10 @@ const styles = {
 };
 
 const weddingInfo = [
-    {label: 'Date:', value: '30th November 2025'},
-    {label: 'Time:', value: '1pm'},
-    {label: 'Location:', value: "Boclair House,<br>100 Milngavie Road,<br>Bearsden,<br>Glasgow,<br>G61&nbsp;2TQ"},
-    // {label: 'Dress Code:', value: 'Formal'}
+    {label: 'Date:', value: '9th July 2026'},
+    {label: 'Ceremony:', value: '13:30'},
+    {label: 'Reception:', value: '19:30'},
+    {label: 'Location:', value: "Lochside House Hotel, Lodges and Spa,<br>New Cumnock,<br>KA18 4PN"},
 ];
 
 const WeddingDetails = () => (
@@ -48,18 +46,20 @@ const WeddingDetails = () => (
                     {weddingInfo.map((info, index) => (
                         <div className="d-flex" key={index}>
                             <div className="col-4 text-start">
-                                <p style={styles.noWrapText}>{info.label}</p>
+                                <p style={styles.noWrapText}><strong>{info.label}</strong></p>
                             </div>
                             <div className="col-8 text-start">
                                 <p dangerouslySetInnerHTML={{__html: info.value}} />
                             </div>
                         </div>
                     ))}
+
                     <div className="text-start" style={styles.rsvpText}>
-                        <>Please note that the full day is an adults-only event.</>
+                        <p>Please note that the full day is an adults-only event.</p>
                     </div>
+
                     <div className="text-start" style={styles.rsvpText}>
-                        <strong>RSVP by 30<sup style={{fontSize: '10px'}}>th</sup> September 2025</strong>
+                        <strong>RSVP by 1<sup style={{fontSize: '10px'}}>st</sup> April 2026</strong>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const WeddingDetails = () => (
             <div className="col-lg-6 order-lg-2 order-1 mb-4">
                 <img
                     src={image1}
-                    alt="Wedding Venue"
+                    alt="Lochside House Hotel"
                     className="img-fluid rounded shadow-sm"
                 />
             </div>

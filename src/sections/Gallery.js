@@ -12,11 +12,15 @@ import image7 from '../resources/images/im7.jpg';
 import image8 from '../resources/images/im8.jpg';
 import image9 from '../resources/images/im9.jpg';
 import image10 from '../resources/images/im10.jpg';
+import image11 from '../resources/images/im12.jpg';
+import image12 from '../resources/images/im13.jpg';
+import image13 from '../resources/images/im14.jpg';
+import image14 from '../resources/images/im15.jpg';
+import image15 from '../resources/images/im16.jpg';
 
 function Gallery() {
     // Create an array of imported images
     let firstBlockImages = [
-
         {src: image2, title: ''},
         {src: image3, title: ''},
         {src: image4, title: ''},
@@ -31,12 +35,21 @@ function Gallery() {
         {src: image9, title: '' },
         {src: image10, title: ''},
     ];
+    
+    let thirdBlockImages = [
+        {src: image11, title: ''},
+        {src: image12, title: ''},
+        {src: image13, title: ''},
+        {src: image14, title: ''},
+        {src: image15, title: ''},
+    ];
 
     return (
         <div className="container text-start row">
             <div><h1>Gallery</h1></div>
             <ImageGridDisplay mainImage={"left"} images={firstBlockImages} modalId="imageModal1"/>
             <ImageGridDisplay mainImage={"right"} images={secondBlockImages} modalId="imageModal2"/>
+            <ImageGridDisplay mainImage={"left"} images={thirdBlockImages} modalId="imageModal3"/>
         </div>
     );
 }
