@@ -12,8 +12,8 @@ import {useState} from "react";
 
 function App() {
 
-    const [colour, setColour] = useState('#4B0114');
-    const [textColour, setTextColour] = useState('#CFCFCF');
+    const [colour, setColour] = useState('#d60589');
+    const [textColour, setTextColour] = useState('#cfcfcf');
 
     return (
         <div style={{backgroundColor: colour, color: textColour}}>
@@ -28,7 +28,7 @@ function App() {
                 <Section id="contact" content={<ContactDetails/>}/>
                 <p>Background colour</p>
                 <input type={"color"} value={colour} onChange={(event) =>setColour(event.target.value)}/>
-
+                
                 <p>Text colour</p>
                 <input type={"color"} value={textColour} onChange={(event) =>setTextColour(event.target.value)}/>
             </div>

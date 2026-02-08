@@ -44,7 +44,8 @@ function GettingThere() {
                             title="Lochside House Hotel Map"
                             loading="lazy"
                             allowFullScreen
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2265.4542387114896!2d-4.145890923235736!3d55.40283081827402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4889d380e92701f5%3A0xc6c42171171887e0!2sLochside%20House%20Hotel%2C%20Lodges%20%26%20Spa!5e0!3m2!1sen!2suk!4v1700000000000">
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.2814612208476!2d-4.2086558!3d55.40714260000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48629d78a2d90b37%3A0xf54a78440115ceaa!2sLochside%20House%20Hotel%2C%20Lodges%20and%20Spa!5e1!3m2!1sen!2suk!4v1769366953381!5m2!1sen!2suk"
+                        >
                         </iframe>
                     </div>
                 </div>
